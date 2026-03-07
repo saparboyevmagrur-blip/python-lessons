@@ -76,10 +76,3 @@ sonlar = list(range(1, 11))
 #     else:
 #         print(son)
 
-book = input("Yaxshi ko'rgan kitob nomini kiriting: ")
-
-while book != 'stop':
-    if book == 'stop':
-        break
-    else: 
-        print(book)
