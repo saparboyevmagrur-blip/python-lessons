@@ -31,8 +31,29 @@
 # print(isEven(7)) # Toq
 
 # Ternary operator yordamida qisqaroq yozish
-def isEven(number):
-    return "Juft" if number % 2 == 0 else "Toq"
+# def isEven(number):
+#     return "Juft" if number % 2 == 0 else "Toq"
 
-print(isEven(4)) # Juft
-print(isEven(7)) # Toq
+# print(isEven(4)) # Juft
+# print(isEven(7)) # Toq
+
+# age = int(input("Yoshingizni kiriting: "))
+
+# print("Siz, endi kattasiz") if age >= 18 else print("Siz hali yoshsiz")
+
+# Unli harflar (a, e, i, o, u)
+# Masalan: "salom" => 2 ta unli harf (a, o)
+# "python" => 1 ta unli harf (o)
+# "bbb" => 0 ta unli harf yo'q
+vowels = "aeiou"
+def count_vowels(word):
+    count = 0
+    for letter in word.lower():
+        if letter in vowels:
+            count += 1
+
+    return count
+
+print(count_vowels("sAlom")) # 2
+print(count_vowels("python")) # 1
+print(count_vowels("bbb")) # 0
