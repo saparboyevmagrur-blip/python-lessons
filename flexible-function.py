@@ -60,11 +60,37 @@ my_function(fname = "Tobias", lname = "Refsnes")
 
 # Amaliyot
 # 1.Istalgancha sonlarni qabul qilib, ularning ko'paytmasini qaytaruvchi funksiya yozing
-def multiple(*numbers):
+def multiply(*numbers):
     result = 1
     for number in numbers:
        result *= number
     return result
-print(multiple(1, 5, 6, 4, 5))
+print(multiply(1, 5, 6, 4, 5))
     
-   
+# Topshiriq: Eng katta sonni topuvchi flexible funksiya
+# Python’da find_max(*numbers) nomli funksiya yozing.
+# Vazifa:
+# - Funksiya istalgancha son qabul qilsin (*args yordamida).
+# - Agar hech qanday argument berilmasa, None qaytarsin.
+# - Berilgan sonlar orasidan eng kattasini topib qaytarsin.
+
+# Muhim shart:
+# ❌ max() funksiyasidan foydalanish taqiqlanadi.
+# ✅ for loop va if yordamida yechim topilsin.
+
+def find_max(*numbers):
+    if len(numbers) == 0:
+        return None
+    max_value = numbers[0]
+    for number in numbers:
+        if number > max_value:
+            max_value = number
+
+    return max_value
+# Misollar:
+print(find_max(4, 8, 2, 10, 6))
+# Natija: 10
+print(find_max(-5, -2, -10))
+# Natija: -2
+print(find_max())
+# Natija: None

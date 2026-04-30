@@ -27,9 +27,9 @@
 # yigindi(3, 7)   # 10
 
 # default value
-# def yosh_hisobla(ism = "Olim", tugilgan_yil = 1980):
-#     yosh = 2026 - tugilgan_yil
-#     print(f"{ism}ning yoshi: {yosh}")
+def yosh_hisobla(ism = "Olim", tugilgan_yil = 1980):
+    yosh = 2026 - tugilgan_yil
+    print(f"{ism}ning yoshi: {yosh}")
 
 # yosh_hisobla("Ismoil", 2000) # Ismoilning yoshi: 26
 # yosh_hisobla("Gulbahor", 1995) # Gulbahorning yoshi: 31
@@ -44,11 +44,11 @@
 # tyil = int(input("Tug'ilgan yilingizni kiriting: "))
 # yosh_hisobla(tyil)
 
-# def salom_ber():
-#     """Salom beruvchi funksiya"""
-#     print("Assalomu alaykum!")
+def salom_ber():
+    """Salom beruvchi funksiya"""
+    print("Assalomu alaykum!")
 
-# salom_ber()
+salom_ber()
 
 def toliq_ism(ism, familiya):
     """Foydalanuvchi ism va familiyasini jamlab chiqaruvchi funksiya"""
