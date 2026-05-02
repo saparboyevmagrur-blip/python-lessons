@@ -12,3 +12,18 @@ print(mfs.addition(5, 12))
 print(mfs.find_max(8, -5, -4, 12))
 print(toliq_ism("Jumavoy", "O'ktamova"))
 print(mfs.PI)
+
+# random module
+import random as r
+print(r.random()) # 0 va 1 oraliqdagi qiymat qaytaradi
+print(r.randint(100, 1000))
+
+ismlar = ['olim','anvar','hasan','husan']
+ism = r.choice(ismlar) # ismlar dan tasodifiy ism tanlaymiz
+print(ism)
+print(r.choice(ism)) # ismdan tasodifiy harf tanlaymiz
+
+x = list(range(11))
+print(x)
+r.shuffle(x)
+print(x)
