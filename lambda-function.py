@@ -46,18 +46,22 @@ sonlar = list(range(11)) # 0 dan 10 gacha sonlar ro'yxati
 #     kvadratlar.append(son*son)
 # print(kvadratlar)
 
-a = [4, 5, 6]
-b = [7, 8, 9]
-a_plus_b = list(map(lambda x,y:x+y,a,b))
-print(a_plus_b)
+# a = [4, 5, 6]
+# b = [7, 8, 9]
+# a_plus_b = list(map(lambda x,y:x+y,a,b))
+# print(a_plus_b)
 
 # filter()
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-odd_numbers = list(filter(lambda x: x % 2 != 0, numbers))
-print(odd_numbers)
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+# odd_numbers = list(filter(lambda x: x % 2 != 0, numbers))
+# print(odd_numbers)
 
-print(list(filter(lambda x: x > 5, numbers)))
+# print(list(filter(lambda x: x > 5, numbers)))
 
-mevalar = ['olma','anor','anjir','shaftoli',"o'rik","tarvuz","qovun","banan"]
-mevalar_b = list(filter(lambda meva:meva.startswith('b'),mevalar))
-print(mevalar_b)
+# mevalar = ['olma','anor','anjir','shaftoli',"o'rik","tarvuz","qovun","banan"]
+# mevalar_b = list(filter(lambda meva:meva.startswith('b'),mevalar))
+# print(mevalar_b)
+
+nums = [5, 12, -8, 0]
+print(list(map(lambda x: x % 2, nums)))
+print(list(filter(lambda x: x % 2 == 0, nums)))
